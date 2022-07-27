@@ -36,3 +36,28 @@ for (int i = 0; i< arr.Length; i++)
             count = count+1;
         }
  }
+
+## Создание цикла для записи элементов в новый массив
+
+Для того, чтобы добавить элементы из одного массива в другой массив и вывести новый массив на экран необходимо написать:
+
+string [] newArray = new string[count];
+
+int i2 =0;
+
+for (int i = 0; i<=count; i++)
+
+{
+
+    if(arr[i].Length <=3)
+    {
+        newArray[i2++] = arr[i];
+    }
+}
+
+for (int i = 0; i< newArray.Length; i++)
+
+{
+
+    Console.Write($" {newArray[i]} ");
+}
